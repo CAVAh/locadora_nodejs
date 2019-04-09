@@ -1,0 +1,31 @@
+{
+  "name": "locadora",
+  "version": "1.0.0",
+  "description": "Sistema de uma locadora de filmes",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js",
+    "dev:server": "nodemon --ignore sessions/ server.js",
+    "test": "nodemon --ignore sessions/ --exec mocha ./test/index.test.js || true"
+  },
+  "author": "Lucas Cavagnolli",
+  "license": "Unlicense",
+  "dependencies": {
+    "async-lock": "^1.2.0",
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "mysql": "^2.16.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "session-file-store": "^1.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "deep-equal": "^1.0.1",
+    "mocha": "^6.1.2",
+    "supertest": "^4.0.2"
+  }
+}
